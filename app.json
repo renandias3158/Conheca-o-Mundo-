@@ -2,6 +2,11 @@
   "expo": {
     "name": "ZAWARDOOOO",
     "slug": "ZAWARDOOOO",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "5183fb87-9720-4a8c-a728-63ea14fcfe55"
+      }
+    }
   }
 }
