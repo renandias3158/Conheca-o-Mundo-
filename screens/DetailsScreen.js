@@ -115,7 +115,7 @@ export default function DetailsScreen({ route }) {
           </View>
 
           <Pressable style={styles.button} onPress={toggleFavorite}>
-            <AntDesign name={isFav ? 'heart' : 'hearto'} size={18} color="#fff" />
+            <AntDesign name={isFav ? 'heart' : 'heart'} size={18} color="#fff" />
             <Text style={styles.buttonText}>
               {isFav ? ' Remover dos Favoritos' : ' Adicionar aos Favoritos'}
             </Text>

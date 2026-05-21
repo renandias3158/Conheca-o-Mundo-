@@ -26,6 +26,7 @@ export default function MenuScreen({ navigation }) {
   const loadCountries = useCallback(async () => {
     try {
       setLoading(true);
+      console.log(getAllCountries);
       const response = await api.get(getAllCountries);
       const normalized = response.data.map(normalizeCountry).sort((a, b) => a.name.localeCompare(b.name));
       setCountries(normalized);
@@ -96,11 +97,11 @@ export default function MenuScreen({ navigation }) {
           <Text style={styles.meta}>Capital: {item.capital}</Text>
           <Text style={styles.metaSmall}>
             {item.region} • {item.continent}
-          </Text>
+          </Text> 
         </View>
 
         <Pressable onPress={() => toggleFavorite(item.code)} hitSlop={12}>
-          <AntDesign name={isFav ? 'heart' : 'hearto'} size={20} color={isFav ? '#e03131' : '#8090a8'} />
+          <AntDesign name={isFav ? 'heart' : 'heart'} size={20} color={isFav ? '#e03131' : '#8090a8'} />
         </Pressable>
       </Pressable>
     );

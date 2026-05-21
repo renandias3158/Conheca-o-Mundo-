@@ -7,11 +7,10 @@ const firebaseConfig = {
   projectId: "zawardooooooo-2cf89",
   storageBucket: "zawardooooooo-2cf89.firebasestorage.app",
   messagingSenderId: "486296322331",
-  appId: "1:486296322331:web:4347c1c4c2f4ad6c9713be",
+  appId: "1:486296322331:web:c747e68052bf2ddb9713be",
+  measurementId: "G-VKE2KQVC8P"
 };
 
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-
-export default app;
